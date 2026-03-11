@@ -104,7 +104,7 @@ int main() {
   ex2_splicers();
   ex3_type_queries();
   ex4_members<Point>();
-  ex4_members<decltype(struct{int x;})>();
+  struct Tmp { int x; }; ex4_members<Tmp>();
   ex5_enumerators();
   ex6_enum_to_string();
   ex7_generic_printer();
